@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.yuguchi.simplememo">
+    tools:context=".CreateMemoActivity">
 
     <EditText
         android:id="@+id/body"
@@ -16,7 +16,7 @@
         android:lines="50"
         android:layout_weight="9"
         android:gravity="top|left"
-        />
+        android:autofillHints="" />
 
     <LinearLayout
         android:layout_width="match_parent"

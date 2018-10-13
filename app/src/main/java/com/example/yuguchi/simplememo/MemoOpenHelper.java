@@ -8,7 +8,7 @@ import android.database.sqlite.SQLiteOpenHelper;
     public class MemoOpenHelper extends SQLiteOpenHelper {
 
         // データベース自体の名前(テーブル名ではない)
-        static final private String DBName = "TATSU_DB";
+        static final private String DBName = "YUGUCHI_DB";
         // データベースのバージョン(2,3と挙げていくとonUpgradeメソッドが実行される)
         static final private int VERSION = 1;
 

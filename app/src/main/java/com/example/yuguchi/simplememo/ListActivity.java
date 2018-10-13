@@ -1,6 +1,20 @@
 package com.example.yuguchi.simplememo;
 
+import android.content.Intent;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.Button;
+import android.widget.ListView;
+import android.widget.SimpleAdapter;
+import android.widget.TextView;
+import android.widget.TwoLineListItem;
+import java.util.ArrayList;
+import java.util.HashMap;
+
 
 public class ListActivity extends AppCompatActivity {
 
@@ -71,7 +85,7 @@ public class ListActivity extends AppCompatActivity {
              */
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 // インテント作成  第二引数にはパッケージ名からの指定で、遷移先クラスを指定
-                Intent intent = new Intent(ListActivity.this, com.android.tatsu.simplememo.CreateMemoActivity.class);
+                Intent intent = new Intent(ListActivity.this,  com.example.yuguchi.simplememo.CreateMemoActivity.class);
 
                 // 選択されたビューを取得 TwoLineListItemを取得した後、text2の値を取得する
                 TwoLineListItem two = (TwoLineListItem)view;
@@ -126,7 +140,7 @@ public class ListActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // CreateMemoActivityへ遷移
-                Intent intent = new Intent(ListActivity.this, com.android.tatsu.simplememo.CreateMemoActivity.class);
+                Intent intent = new Intent(ListActivity.this,com.example.yuguchi.simplememo.CreateMemoActivity.class);
                 intent.putExtra("id", "");
                 startActivity(intent);
             }

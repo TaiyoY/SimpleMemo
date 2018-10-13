@@ -1,7 +1,23 @@
 package com.example.yuguchi.simplememo;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ListView;
+import android.widget.SimpleAdapter;
+import android.widget.TextView;
+import android.widget.TwoLineListItem;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.UUID;
 
-    public class CreateMemoActivity extends AppCompatActivity {
+public class CreateMemoActivity extends AppCompatActivity {
 
         // MemoOpenHelperクラスを定義
         MemoOpenHelper helper = null;
@@ -86,7 +102,7 @@ import android.support.v7.app.AppCompatActivity;
                         db.close();
                     }
                     // 保存後に一覧へ戻る
-                    Intent intent = new Intent(CreateMemoActivity.this, com.android.tatsu.simplememo.ListActivity.class);
+                    Intent intent = new Intent(CreateMemoActivity.this, com.example.yuguchi.simplememo.ListActivity.class);
                     startActivity(intent);
                 }
             });
