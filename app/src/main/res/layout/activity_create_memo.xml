@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".CreateMemoActivity">
+    tools:context="com.example.yuguchi.simplememo.CreateMemoActivity">
 
     <EditText
         android:id="@+id/body"
@@ -29,8 +29,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="登録する"
-            />
+            android:text="フォルダ作成" />
+
+        <Button
+            android:id="@+id/register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="メモ作成" />
 
         <Button
             android:id="@+id/back"
